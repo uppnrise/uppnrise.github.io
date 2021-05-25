@@ -6,7 +6,7 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 disqus: https-uppnrise-github-io
-google_analytics: dbyll # todo, replace with your ga
+google_analytics: UA-197823042-1
 title: Burhanettin Nacar
 
 defaults:
