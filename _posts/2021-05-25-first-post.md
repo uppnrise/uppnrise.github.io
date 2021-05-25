@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: First Post
 categories: [general]
 tags: [post, blog, uppnrise, spring, docker, kubernetes, technology]
