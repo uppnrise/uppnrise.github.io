@@ -16,7 +16,7 @@ Thus, for a company developing typical software applications, any maintenance on
 
 Depending on the complexity of an application, the regression verification might not be an easy task and might require a major project. Furthermore, any update normally requires a full application stop. Normally, this implies an environment with high-availability features enabled to minimize the impact of any downtime, and increases the complexity of the deployment process. The maintenance might become cumbersome, and any deployment or update might become a complex process.
 
-![container-vs-os](../assets/media/container_vs_os.svg "Title")
+![container-vs-os](../assets/media/container_vs_os.png)
 
 Alternatively, a system administrator can work with containers, which are a kind of isolated partition inside a single operating system. Containers provide many of the same benefits as virtual machines, such as security, storage, and network isolation, while requiring far fewer hardware resources and being quicker to launch and terminate. They also isolate the libraries and the runtime environment (such as CPU and storage) used by an application to minimize the impact of any OS update to the host OS, as described in the previous diagram.
 
