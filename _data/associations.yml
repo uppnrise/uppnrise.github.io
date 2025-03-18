@@ -1,0 +1,7 @@
+# Associations
+
+- organization: Example
+  role: Volunteer
+  year: 2001 &mdash; 2010
+  url: https://www.example.org/
+  summary: Examples of the work I did with this organization.

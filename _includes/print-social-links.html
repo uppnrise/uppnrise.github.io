@@ -1,0 +1,41 @@
+<!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
+{% if site.print_social_links %}
+<ul>
+
+  <!-- GitHub link -->
+  {% if site.social_links.github_url %}
+  <li><strong>Github</strong>: {{ site.social_links.github_url }}</li>
+  {% endif %}
+
+  <!-- Twitter link -->
+  {% if site.social_links.twitter_url %}
+  <li><strong>Twitter</strong>: {{ site.social_links.twitter_url }}</li>
+  {% endif %}
+
+  <!-- Dribbble link -->
+  {% if site.social_links.dribbble_url %}
+  <li><strong>Dribbble</strong>: {{ site.social_links.dribbble_url }}</li>
+  {% endif %}
+
+  <!-- Facebook link -->
+  {% if site.social_links.facebook_url %}
+  <li><strong>Facebook</strong>: {{ site.social_links.facebook_url }}</li>
+  {% endif %}
+
+  <!-- LinkedIn link -->
+  {% if site.social_links.linkedin_url %}
+  <li><strong>LinkedIn</strong>: {{ site.social_links.linkedin_url }}</li>
+  {% endif %}
+
+  <!-- Instagram link -->
+  {% if site.social_links.instagram_url %}
+  <li><strong>Instagram</strong>: {{ site.social_links.instagram_url }}</li>
+  {% endif %}
+
+  <!-- Website link -->
+  {% if site.resume_social_links.resume_website_url %}
+  <li><strong>Website</strong>: {{ site.resume_social_links.resume_website_url }}</li>
+  {% endif %}
+
+</ul>
+{% endif %}

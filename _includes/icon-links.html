@@ -1,0 +1,48 @@
+<!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
+{% if site.social_links %}
+<ul class="icon-links">
+
+  <!-- GitHub link -->
+  {% if site.social_links.github_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.github_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-github.html %}</a></li>
+  {% endif %}
+
+  <!-- Twitter link -->
+  {% if site.social_links.twitter_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.twitter_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitter.html %}</a></li>
+  {% endif %}
+  
+  <!-- Medium link -->
+  {% if site.social_links.medium_url %}
+  <li class="icon-link-item">
+    <a href="{{ site.social_links.medium_url }}" class="icon-link" itemprop="url">{% include icons/icon-medium.html %}</a>
+  </li>
+  {% endif %}
+
+  <!-- Dribbble link -->
+  {% if site.social_links.dribbble_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.dribbble_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-dribbble.html %}</a></li>
+  {% endif %}
+
+  <!-- Facebook link -->
+  {% if site.social_links.facebook_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.facebook_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-facebook.html %}</a></li>
+  {% endif %}
+
+  <!-- LinkedIn link -->
+  {% if site.social_links.linkedin_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.linkedin_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
+  {% endif %}
+
+  <!-- Instagram link -->
+  {% if site.social_links.instagram_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.instagram_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-instagram.html %}</a></li>
+  {% endif %}
+
+  <!-- Website link -->
+  {% if site.social_links.website_url %}
+  <li class="icon-link-item"><a href="{{ site.social_links.website_url }}" class="icon-link" itemprop="url">{% include icons/icon-website.html %}</a></li>
+  {% endif %}
+
+</ul>
+{% endif %}

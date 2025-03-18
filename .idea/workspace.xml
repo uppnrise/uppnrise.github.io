@@ -4,51 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="994f6581-91a2-4aba-aee3-eb994256a746" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/disqus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-05-25-first-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-06-22-containerized-applications-and-advantages-of-them.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-06-24-docker-architecture.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ico/apple-touch-icon-114-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ico/apple-touch-icon-144-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ico/apple-touch-icon-57-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ico/apple-touch-icon-72-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ico/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/media/container_vs_os.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/media/dbyll-ss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/jquery/jquery-1.10.2.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resources/syntax/syntax.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" />
+    <list default="true" id="0a3b6b44-aa7c-448f-aefa-e371e606bf4f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uppnrise.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-dribbble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-print.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_assets/icons/icon-website.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/associations.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/education.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/experience.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/interests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/links.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/projects.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/recognitions.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/skills.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icon-links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-dribbble.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-facebook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-github.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-instagram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-linkedin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-medium.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-pdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-print.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-twitter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/icons/icon-website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/print-social-links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/resume.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_resume.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles-backup/2021-05-25-first-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles-backup/2021-06-22-containerized-applications-and-advantages-of-them.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles-backup/2021-06-24-docker-architecture.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,29 +64,44 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2uDO96IkIU8dgJql1hWbFralehe" />
+  <component name="ProjectId" id="2uUGvHqQicLJ6vjtolvi2RaN4PZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/upp/Development/workspaces/prod_projects/uppnrise.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/_sass" />
+      <recent name="$PROJECT_DIR$/_assets" />
+      <recent name="$PROJECT_DIR$/_assets/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/articles-backup" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -91,19 +113,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="994f6581-91a2-4aba-aee3-eb994256a746" name="Changes" comment="" />
-      <created>1741779524830</created>
+      <changelist id="0a3b6b44-aa7c-448f-aefa-e371e606bf4f" name="Changes" comment="" />
+      <created>1742295969737</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1741779524830</updated>
-      <workItem from="1741779525467" duration="355000" />
-      <workItem from="1741779883183" duration="333000" />
-      <workItem from="1741780218684" duration="6000" />
-      <workItem from="1741780227651" duration="9000" />
-      <workItem from="1741780237896" duration="84000" />
-      <workItem from="1741887575624" duration="171000" />
-      <workItem from="1741887751616" duration="212000" />
-      <workItem from="1741888242670" duration="1991000" />
+      <updated>1742295969737</updated>
+      <workItem from="1742295970450" duration="3079000" />
+      <workItem from="1742299054034" duration="1850000" />
+      <workItem from="1742309074932" duration="6114000" />
     </task>
     <servers />
   </component>
@@ -115,19 +132,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
