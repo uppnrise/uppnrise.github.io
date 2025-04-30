@@ -27,6 +27,8 @@
     @include border-radius(100px);
     margin: 0 auto;
     display: block;
+    background-color: #efefef;
+    transform: scale(1.25);
   }
 
   .header-name {
