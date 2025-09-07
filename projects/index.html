@@ -1,0 +1,59 @@
+---
+layout: default
+permalink: /projects/
+---
+
+<!-- begin Projects -->
+<section class="content-section">
+  <header class="section-header">
+    <h2>Projects</h2>
+  </header>
+
+  {% if site.data.projects and site.data.projects.size > 0 %}
+    {% for project in site.data.projects %}
+    <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="creator" content="{{ site.name }}" itemtype="http://schema.org/Person" />
+      <h3 class="resume-item-title" itemprop="name">
+        {% if project.url %}
+          <a href="{{ project.url }}" itemprop="url" target="_blank" rel="noopener">{{ project.project }}</a>
+        {% else %}
+          {{ project.project }}
+        {% endif %}
+      </h3>
+      <h4 class="resume-item-details" itemprop="description">
+        {{ project.role }}{% if project.duration %} &bull; {{ project.duration }}{% endif %}
+      </h4>
+      {% if project.description %}
+        <p class="resume-item-copy">{{ project.description }}</p>
+      {% endif %}
+      
+      {% if project.technologies %}
+      <div class="resume-item-copy">
+        <strong>Technologies:</strong>
+        {% for tech in project.technologies %}
+          <span class="technology-tag">{{ tech }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      {% if project.github_url or project.demo_url %}
+      <div class="resume-item-copy">
+        {% if project.github_url %}
+          <a href="{{ project.github_url }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+        {% if project.github_url and project.demo_url %} &bull; {% endif %}
+        {% if project.demo_url %}
+          <a href="{{ project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="resume-item">
+      <h3 class="resume-item-title">Projects Coming Soon</h3>
+      <p class="resume-item-copy">I'm currently working on documenting and showcasing my projects. Check back soon to see a comprehensive portfolio of my work including web applications, APIs, and open-source contributions.</p>
+    </div>
+  {% endif %}
+</section>
+<!-- end Projects -->
