@@ -1,0 +1,52 @@
+// Blog and Projects Page Styles
+// ---------------------------------------/
+
+// Navigation styles
+.main-navigation {
+  margin: 1.5rem 0;
+  text-align: center;
+  border-top: 2px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 1rem 0;
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav-item {
+    display: inline-block;
+  }
+
+  .nav-link {
+    @include sans;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: $text_color;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    &.active {
+      background-color: #e8e8e8;
+      font-weight: 700;
+    }
+  }
+}
+
+// Technology tags styling that matches the main design
+.technology-tag {
+  display: inline;
+  color: #666;
+  font-style: italic;
+}
