@@ -1,7 +1,30 @@
 # Projects
 
+- project: Enterprise E-commerce Platform
+  role: Senior Backend Engineer
+  duration: 2023 &mdash; Present
+  url: "#"
+  description: Led the development of a scalable e-commerce platform serving millions of users. Implemented microservices architecture with event-driven communication, achieving 99.9% uptime and 50% improvement in response times.
+  technologies: ["Java", "Spring Boot", "Kubernetes", "PostgreSQL", "Redis", "Apache Kafka", "AWS"]
+  github_url: "#"
+  demo_url: "#"
+
+- project: Real-time Analytics Dashboard
+  role: Full-stack Developer
+  duration: 2022 &mdash; 2023
+  description: Built a real-time analytics dashboard for monitoring business metrics. Integrated multiple data sources and implemented real-time data streaming with interactive visualizations.
+  technologies: ["Node.js", "React", "TypeScript", "MongoDB", "Socket.io", "Docker"]
+  github_url: "#"
+
+- project: API Gateway & Auth Service
+  role: Backend Developer
+  duration: 2021 &mdash; 2022
+  description: Designed and implemented a centralized API gateway with OAuth 2.0 authentication, rate limiting, and request routing. Improved system security and reduced API response time by 30%.
+  technologies: ["Go", "Redis", "JWT", "Docker", "NGINX", "PostgreSQL"]
+  github_url: "#"
+
 - project: jazz
   role: Founder
   duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz
+  description: An ongoing personal project exploring music and technology intersection.
+  technologies: ["Various"]
