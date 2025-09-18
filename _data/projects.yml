@@ -1,11 +1,17 @@
 # Projects
 
-- project: TBD - Project 1
-  role: TBD
-  duration: TBD
-  description: Project details to be determined.
+- project: Distributed Rate Limiter
+  role: Lead Developer / Architect
+  duration: 2025
+  url: https://github.com/uppnrise/distributed-rate-limiter
+  github_url: https://github.com/uppnrise/distributed-rate-limiter
+  description: A high-performance distributed token bucket rate limiter implementation in Java with comprehensive API documentation. Built for microservices architectures with Redis backend for distributed state management. Features dynamic configuration, real-time metrics, and sub-millisecond response times handling 50,000+ requests/second.
+  technologies: [Java, Spring Boot, Redis, Docker, Kubernetes, Prometheus, Grafana, OpenAPI/Swagger, Maven, JUnit]
 
-- project: TBD - Project 2
-  role: TBD
-  duration: TBD
-  description: Project details to be determined.
+- project: Personal Portfolio Website
+  role: Full-Stack Developer
+  duration: 2025
+  url: https://uppnrise.github.io
+  github_url: https://github.com/uppnrise/uppnrise.github.io
+  description: A responsive Jekyll-based portfolio website showcasing professional experience, projects, and blog posts. Features clean design, fast loading times, and SEO optimization. Deployed on GitHub Pages with custom domain and automated CI/CD pipeline.
+  technologies: [Jekyll, HTML5, CSS3, SCSS, JavaScript, GitHub Pages, Git]
