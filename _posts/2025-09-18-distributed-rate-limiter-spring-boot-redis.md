@@ -659,19 +659,3 @@ Key benefits:
 ## Resources
 
 - **GitHub Repository**: [https://github.com/uppnrise/distributed-rate-limiter](https://github.com/uppnrise/distributed-rate-limiter)
-- **Documentation**: [https://distributed-rate-limiter.readthedocs.io](https://distributed-rate-limiter.readthedocs.io)
-- **API Reference**: [./docs/API.md](./docs/API.md)
-- **Performance Benchmarks**: [./PERFORMANCE.md](./PERFORMANCE.md)
-
----
-
-*This project is open source and available under the MIT License. We'd love to hear about your use cases and welcome contributions from the community.*
-
-**Join Our Community:**
-- ⭐ Star the project on GitHub
-- 🐛 Report issues and bugs
-- 💡 Suggest new features
-- 🤝 Submit pull requests
-- 📖 Improve documentation
-
-Together, we're building the next generation of scalable rate limiting solutions.
