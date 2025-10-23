@@ -4,11 +4,7 @@ layout: default
 
 <!-- begin Blog Post -->
 <section class="content-section">
-  <header class="section-header">
-    <h2>{{ page.title }}</h2>
-  </header>
-
-  <div class="resume-item">
+  <div class="resume-item blog-post">
     <h4 class="resume-item-details">{{ page.date | date: "%B %d, %Y" }}</h4>
     {% if page.tags and page.tags.size > 0 %}
     <div class="resume-item-copy">
@@ -19,7 +15,7 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="resume-item-copy">
+    <div class="resume-item-copy blog-content">
       {{ content }}
     </div>
 
