@@ -50,3 +50,15 @@
   color: #666;
   font-style: italic;
 }
+
+// Blog and project listing pages - style post/project title links
+// Override the default underline from _resume.scss for cleaner look in listings
+.content-section .resume-item-title > a {
+  border-bottom: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #666;
+    border-bottom: none;
+  }
+}
