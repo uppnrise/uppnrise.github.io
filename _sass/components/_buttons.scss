@@ -1,0 +1,117 @@
+// Modern Button Component
+// ---------------------------------------
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: $space-3 $space-6;
+  min-height: 44px;
+  font-weight: $font-medium;
+  border-radius: $border-radius-md;
+  transition: $transition-base;
+  cursor: pointer;
+  border: none;
+  
+  @include focus-visible;
+  
+  // Primary Button
+  &--primary {
+    background: $gradient-primary;
+    color: $neutral-0;
+    box-shadow: $shadow-sm;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  // Secondary Button
+  &--secondary {
+    background: $neutral-0;
+    color: $neutral-900;
+    border: 2px solid $neutral-300;
+    
+    &:hover {
+      border-color: $primary-500;
+      color: $primary-500;
+      transform: translateY(-2px);
+      box-shadow: $shadow-sm;
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  // Outline Button
+  &--outline {
+    background: transparent;
+    color: $primary-500;
+    border: 2px solid $primary-500;
+    
+    &:hover {
+      background: $primary-500;
+      color: $neutral-0;
+      transform: translateY(-2px);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  // Ghost Button
+  &--ghost {
+    background: transparent;
+    color: $neutral-700;
+    
+    &:hover {
+      background: $neutral-100;
+      color: $neutral-900;
+    }
+  }
+  
+  // Size Variants
+  &--sm {
+    padding: $space-2 $space-4;
+    font-size: $text-sm;
+    min-height: 36px;
+  }
+  
+  &--lg {
+    padding: $space-4 $space-8;
+    font-size: $text-lg;
+    min-height: 52px;
+  }
+  
+  // Disabled State
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+// Contact Button (legacy support)
+.contact-button {
+  @extend .button;
+  @extend .button--primary;
+  margin-top: $space-6;
+  
+  &.not-looking {
+    @extend .button--ghost;
+    cursor: default;
+    
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}

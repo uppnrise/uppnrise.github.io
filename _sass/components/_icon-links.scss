@@ -1,0 +1,64 @@
+// Icon Links Component
+// ---------------------------------------
+
+.icon-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  justify-content: center;
+  align-items: center;
+  margin: $space-6 0;
+  
+  @include respond-to($breakpoint-md) {
+    gap: $space-4;
+  }
+}
+
+.icon-link-item {
+  // No additional styles needed
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: $neutral-100;
+  color: $neutral-700;
+  transition: $transition-base;
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  
+  &:hover {
+    background: $primary-500;
+    color: $neutral-0;
+    transform: translateY(-3px);
+    box-shadow: $shadow-md;
+  }
+  
+  @include focus-visible;
+}
+
+// Print social links
+.print-social-links {
+  ul {
+    li {
+      margin-bottom: $space-2;
+      
+      a {
+        color: $primary-500;
+        font-weight: $font-medium;
+        
+        &:hover {
+          color: $primary-900;
+        }
+      }
+    }
+  }
+}

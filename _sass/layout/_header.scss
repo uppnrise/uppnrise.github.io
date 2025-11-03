@@ -1,0 +1,157 @@
+// Modern Header Component
+// ---------------------------------------
+
+.page-header {
+  text-align: center;
+  padding: $space-12 0 $space-8;
+  background: linear-gradient(180deg, $neutral-50 0%, $neutral-0 100%);
+  
+  @include respond-to($breakpoint-md) {
+    padding: $space-16 0 $space-12;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto $space-6;
+    box-shadow: $shadow-lg;
+    border: 4px solid $neutral-0;
+    transition: $transition-transform;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+    
+    @include respond-to($breakpoint-md) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  .header-name {
+    font-size: $text-4xl;
+    font-weight: $font-black;
+    color: $neutral-900;
+    margin-bottom: $space-3;
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-5xl;
+    }
+  }
+  
+  .header-title {
+    font-size: $text-xl;
+    font-weight: $font-medium;
+    color: $neutral-600;
+    margin-bottom: $space-6;
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-2xl;
+    }
+  }
+  
+  .header-contact-info {
+    margin-bottom: $space-4;
+    color: $neutral-600;
+  }
+  
+  .title-bar {
+    margin-bottom: $space-6;
+  }
+  
+  .executive-summary {
+    max-width: 800px;
+    margin: $space-8 auto;
+    font-size: $text-lg;
+    line-height: $leading-relaxed;
+    color: $neutral-700;
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-xl;
+    }
+    
+    p {
+      margin-bottom: $space-4;
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  background: $gradient-dark;
+  color: $neutral-0;
+  padding: $space-16 0;
+  position: relative;
+  overflow: hidden;
+  
+  @include respond-to($breakpoint-md) {
+    padding: $space-24 0;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba($primary-500, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba($primary-900, 0.2) 0%, transparent 50%);
+    animation: gradient-shift 15s ease infinite;
+  }
+  
+  &__container {
+    @include container;
+    position: relative;
+    z-index: 1;
+  }
+  
+  &__content {
+    max-width: 700px;
+  }
+  
+  &__title {
+    font-size: $text-4xl;
+    font-weight: $font-black;
+    margin-bottom: $space-4;
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-5xl;
+    }
+    
+    &-greeting {
+      display: block;
+      font-size: $text-xl;
+      font-weight: $font-medium;
+      color: $primary-100;
+      margin-bottom: $space-2;
+    }
+    
+    &-name {
+      display: block;
+      background: linear-gradient(135deg, $neutral-0 0%, $primary-100 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+  
+  &__subtitle {
+    font-size: $text-2xl;
+    font-weight: $font-medium;
+    color: $primary-100;
+    margin-bottom: $space-6;
+  }
+  
+  &__description {
+    font-size: $text-lg;
+    line-height: $leading-relaxed;
+    color: $neutral-200;
+    margin-bottom: $space-8;
+  }
+  
+  &__actions {
+    display: flex;
+    gap: $space-4;
+    flex-wrap: wrap;
+  }
+}

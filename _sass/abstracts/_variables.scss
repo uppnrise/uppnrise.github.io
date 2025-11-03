@@ -1,0 +1,159 @@
+// Design Tokens - Modern Variable System
+// ---------------------------------------
+
+// ============================================================================
+// Color System
+// ============================================================================
+
+// Primary Palette
+$primary-50: #f0f9ff;
+$primary-100: #e0f2fe;
+$primary-500: #0ea5e9;  // Main brand color
+$primary-900: #0c4a6e;
+
+// Neutral Palette
+$neutral-0: #ffffff;
+$neutral-50: #f8fafc;
+$neutral-100: #f1f5f9;
+$neutral-200: #e2e8f0;
+$neutral-300: #cbd5e1;
+$neutral-400: #94a3b8;
+$neutral-500: #64748b;
+$neutral-600: #475569;
+$neutral-700: #334155;
+$neutral-800: #1e293b;
+$neutral-900: #0f172a;
+$neutral-1000: #020617;
+
+// Semantic Colors
+$success: #10b981;
+$warning: #f59e0b;
+$error: #ef4444;
+$info: #3b82f6;
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, $primary-500 0%, $primary-900 100%);
+$gradient-dark: linear-gradient(135deg, $neutral-900 0%, $neutral-1000 100%);
+
+// ============================================================================
+// Typography System
+// ============================================================================
+
+// Modern font stack
+$font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+$font-secondary: 'Space Grotesk', system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+// Fallback to system fonts if custom fonts don't load
+$font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+
+// Type Scale (1.250 - Major Third)
+$text-xs: 0.75rem;      // 12px
+$text-sm: 0.875rem;     // 14px
+$text-base: 1rem;       // 16px
+$text-lg: 1.125rem;     // 18px
+$text-xl: 1.25rem;      // 20px
+$text-2xl: 1.563rem;    // 25px
+$text-3xl: 1.953rem;    // 31px
+$text-4xl: 2.441rem;    // 39px
+$text-5xl: 3.052rem;    // 49px
+
+// Font Weights
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// Line Heights
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;
+
+// ============================================================================
+// Spacing System
+// ============================================================================
+
+// Spacing scale (4px base unit)
+$space-1: 0.25rem;   // 4px
+$space-2: 0.5rem;    // 8px
+$space-3: 0.75rem;   // 12px
+$space-4: 1rem;      // 16px
+$space-5: 1.25rem;   // 20px
+$space-6: 1.5rem;    // 24px
+$space-8: 2rem;      // 32px
+$space-10: 2.5rem;   // 40px
+$space-12: 3rem;     // 48px
+$space-16: 4rem;     // 64px
+$space-20: 5rem;     // 80px
+$space-24: 6rem;     // 96px
+$space-32: 8rem;     // 128px
+
+// ============================================================================
+// Responsive Breakpoints
+// ============================================================================
+
+// Mobile-first breakpoints
+$breakpoint-sm: 640px;   // Small devices
+$breakpoint-md: 768px;   // Tablets
+$breakpoint-lg: 1024px;  // Laptops
+$breakpoint-xl: 1280px;  // Desktops
+$breakpoint-2xl: 1536px; // Large screens
+
+// ============================================================================
+// Border & Radius
+// ============================================================================
+
+$border-radius-sm: 0.375rem;  // 6px
+$border-radius-md: 0.5rem;    // 8px
+$border-radius-lg: 0.75rem;   // 12px
+$border-radius-xl: 1rem;      // 16px
+$border-radius-full: 9999px;
+
+$border-width: 1px;
+$border-width-md: 2px;
+$border-width-lg: 4px;
+
+// ============================================================================
+// Shadows
+// ============================================================================
+
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// ============================================================================
+// Animation & Transitions
+// ============================================================================
+
+// Timing functions
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+$ease-out: cubic-bezier(0.0, 0, 0.2, 1);
+$ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+// Duration
+$duration-fast: 150ms;
+$duration-normal: 250ms;
+$duration-slow: 350ms;
+
+// Reusable transitions
+$transition-base: all $duration-normal $ease-in-out;
+$transition-colors: color $duration-normal $ease-in-out,
+                    background-color $duration-normal $ease-in-out;
+$transition-transform: transform $duration-normal $ease-out;
+
+// ============================================================================
+// Z-Index Scale
+// ============================================================================
+
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;

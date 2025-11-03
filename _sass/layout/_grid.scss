@@ -1,0 +1,124 @@
+// Modern Grid System
+// ---------------------------------------
+
+.grid {
+  display: grid;
+  gap: $space-6;
+  
+  // Default: Single column
+  grid-template-columns: 1fr;
+  
+  // Two columns on tablets
+  @include respond-to($breakpoint-md) {
+    &--2-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  // Three columns on desktop
+  @include respond-to($breakpoint-lg) {
+    &--3-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    &--4-col {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  // Auto-fit responsive grid
+  &--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  &--auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  // Gap variations
+  &--gap-sm {
+    gap: $space-4;
+  }
+  
+  &--gap-lg {
+    gap: $space-8;
+  }
+  
+  &--gap-xl {
+    gap: $space-12;
+  }
+}
+
+// Container
+.container {
+  @include container;
+}
+
+// Section spacing
+.section {
+  padding: $space-12 0;
+  
+  @include respond-to($breakpoint-md) {
+    padding: $space-16 0;
+  }
+  
+  @include respond-to($breakpoint-lg) {
+    padding: $space-20 0;
+  }
+  
+  &--sm {
+    padding: $space-8 0;
+    
+    @include respond-to($breakpoint-md) {
+      padding: $space-12 0;
+    }
+  }
+  
+  &--lg {
+    padding: $space-16 0;
+    
+    @include respond-to($breakpoint-md) {
+      padding: $space-24 0;
+    }
+  }
+}
+
+.content-section {
+  margin-bottom: $space-12;
+  
+  @include respond-to($breakpoint-md) {
+    margin-bottom: $space-16;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section-header {
+  margin-bottom: $space-8;
+  
+  h2 {
+    font-size: $text-3xl;
+    font-weight: $font-bold;
+    color: $neutral-900;
+    position: relative;
+    padding-bottom: $space-3;
+    margin-bottom: $space-2;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: $gradient-primary;
+      border-radius: $border-radius-full;
+    }
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-4xl;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+// Modern Footer Component
+// ---------------------------------------
+
+.footer {
+  background: $neutral-900;
+  color: $neutral-300;
+  padding: $space-12 0 $space-6;
+  margin-top: $space-20;
+  
+  &__container {
+    @include container;
+  }
+  
+  &__content {
+    display: grid;
+    gap: $space-8;
+    margin-bottom: $space-8;
+    
+    @include respond-to($breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include respond-to($breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  &__section {
+    &-title {
+      font-size: $text-lg;
+      font-weight: $font-bold;
+      color: $neutral-0;
+      margin-bottom: $space-4;
+    }
+  }
+  
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+  }
+  
+  &__link {
+    color: $neutral-300;
+    transition: $transition-colors;
+    
+    &:hover {
+      color: $primary-500;
+    }
+    
+    @include focus-visible;
+  }
+  
+  &__bottom {
+    border-top: 1px solid $neutral-800;
+    padding-top: $space-6;
+    text-align: center;
+    color: $neutral-400;
+    font-size: $text-sm;
+  }
+}
+
+// Page Footer (legacy support)
+.page-footer {
+  background: $neutral-50;
+  padding: $space-8 0;
+  margin-top: $space-16;
+  border-top: 1px solid $neutral-200;
+  
+  .footer-line {
+    text-align: center;
+    color: $neutral-600;
+    font-size: $text-sm;
+    
+    a {
+      color: $primary-500;
+      font-weight: $font-medium;
+      
+      &:hover {
+        color: $primary-900;
+      }
+    }
+  }
+}

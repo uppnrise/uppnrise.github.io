@@ -1,0 +1,144 @@
+// Modern Card Component
+// ---------------------------------------
+
+.card {
+  background: $neutral-0;
+  border-radius: $border-radius-lg;
+  padding: $space-6;
+  box-shadow: $shadow-md;
+  transition: $transition-transform, box-shadow $duration-normal $ease-out;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-xl;
+  }
+  
+  &__header {
+    margin-bottom: $space-4;
+  }
+  
+  &__title {
+    font-size: $text-2xl;
+    font-weight: $font-bold;
+    color: $neutral-900;
+    margin-bottom: $space-2;
+  }
+  
+  &__meta {
+    font-size: $text-sm;
+    color: $neutral-500;
+    font-weight: $font-medium;
+  }
+  
+  &__content {
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: $neutral-700;
+  }
+  
+  &__footer {
+    margin-top: $space-4;
+    padding-top: $space-4;
+    border-top: 1px solid $neutral-200;
+    display: flex;
+    gap: $space-2;
+    flex-wrap: wrap;
+  }
+  
+  &__tag {
+    display: inline-block;
+    padding: $space-1 $space-3;
+    background: $primary-50;
+    color: $primary-900;
+    border-radius: $border-radius-full;
+    font-size: $text-xs;
+    font-weight: $font-medium;
+    transition: $transition-colors;
+    
+    &:hover {
+      background: $primary-100;
+    }
+  }
+  
+  // Card Variants
+  &--glass {
+    background: rgba($neutral-0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($neutral-0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  &--bordered {
+    border: 2px solid $neutral-200;
+    box-shadow: none;
+    
+    &:hover {
+      border-color: $primary-500;
+    }
+  }
+  
+  &--flat {
+    box-shadow: none;
+    border: 1px solid $neutral-200;
+  }
+}
+
+// Resume Item Card (legacy support)
+.resume-item {
+  background: $neutral-0;
+  border-radius: $border-radius-lg;
+  padding: $space-6;
+  margin-bottom: $space-6;
+  box-shadow: $shadow-sm;
+  transition: $transition-transform, box-shadow $duration-normal $ease-out;
+  border-left: 4px solid $primary-500;
+  
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: $shadow-md;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume-item-title {
+  font-size: $text-2xl;
+  font-weight: $font-bold;
+  color: $neutral-900;
+  margin-bottom: $space-2;
+}
+
+.resume-item-details {
+  font-size: $text-base;
+  color: $neutral-600;
+  font-weight: $font-medium;
+  margin-bottom: $space-3;
+}
+
+.resume-item-copy {
+  font-size: $text-base;
+  line-height: $leading-relaxed;
+  color: $neutral-700;
+  margin-bottom: $space-3;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume-item-list {
+  list-style: disc;
+  padding-left: $space-5;
+  
+  li {
+    margin-bottom: $space-2;
+    color: $neutral-700;
+  }
+}
+
+.award-title {
+  font-style: italic;
+  color: $neutral-600;
+}

@@ -1,0 +1,140 @@
+// Modern Mixins
+// ---------------------------------------
+
+// ============================================================================
+// Responsive Design Mixins
+// ============================================================================
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-below($breakpoint) {
+  @media (max-width: $breakpoint - 1) {
+    @content;
+  }
+}
+
+@mixin respond-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max - 1) {
+    @content;
+  }
+}
+
+// ============================================================================
+// Container Mixin
+// ============================================================================
+
+@mixin container {
+  max-width: $breakpoint-xl;
+  margin-inline: auto;
+  padding-inline: $space-4;
+  
+  @include respond-to($breakpoint-md) {
+    padding-inline: $space-6;
+  }
+  
+  @include respond-to($breakpoint-lg) {
+    padding-inline: $space-8;
+  }
+}
+
+// ============================================================================
+// Typography Mixins
+// ============================================================================
+
+@mixin heading {
+  font-family: $font-primary;
+  font-weight: $font-bold;
+  line-height: $leading-tight;
+  color: $neutral-900;
+}
+
+@mixin body-text {
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  line-height: $leading-relaxed;
+  color: $neutral-700;
+}
+
+// ============================================================================
+// Flexbox Utilities
+// ============================================================================
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ============================================================================
+// Hover & Focus States
+// ============================================================================
+
+@mixin interactive {
+  transition: $transition-base;
+  cursor: pointer;
+  
+  &:hover {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  &:focus {
+    outline: 2px solid $primary-500;
+    outline-offset: 2px;
+  }
+  
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+// ============================================================================
+// Truncate Text
+// ============================================================================
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// ============================================================================
+// Accessibility
+// ============================================================================
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 2px solid $primary-500;
+    outline-offset: 2px;
+  }
+}

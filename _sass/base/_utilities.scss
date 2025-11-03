@@ -1,0 +1,109 @@
+// Utility Classes
+// ---------------------------------------
+
+// ============================================================================
+// Display Utilities
+// ============================================================================
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+// ============================================================================
+// Screen Reader Only
+// ============================================================================
+
+.sr-only {
+  @include visually-hidden;
+}
+
+// ============================================================================
+// Print Utilities
+// ============================================================================
+
+.no-print {
+  @media print {
+    display: none !important;
+  }
+}
+
+.print-only {
+  display: none;
+  
+  @media print {
+    display: block !important;
+  }
+}
+
+// ============================================================================
+// Spacing Utilities
+// ============================================================================
+
+.mt-auto { margin-top: auto; }
+.mr-auto { margin-right: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+
+// ============================================================================
+// Text Utilities
+// ============================================================================
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}
+
+.font-medium {
+  font-weight: $font-medium;
+}
+
+.font-normal {
+  font-weight: $font-regular;
+}
+
+// ============================================================================
+// Color Utilities
+// ============================================================================
+
+.text-primary {
+  color: $primary-500;
+}
+
+.text-neutral {
+  color: $neutral-600;
+}
+
+.text-muted {
+  color: $neutral-500;
+}

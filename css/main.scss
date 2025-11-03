@@ -1,15 +1,32 @@
 ---
 ---
 
-// "Reset" styles and SCSS reusable components
-@import "variables";
+// Modern Design System - Abstracts (variables, mixins, functions)
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+// Base styles (resets, typography, utilities)
+@import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+
+// Components (buttons, cards, navigation, etc.)
+@import "components/buttons";
+@import "components/cards";
+@import "components/navigation";
+@import "components/footer";
+@import "components/icon-links";
+
+// Layout (grid, containers, sections)
+@import "layout/grid";
+@import "layout/header";
+
+// Legacy imports for backward compatibility
 @import "normalize";
 @import "mixins";
-
-// Generic site base & layout styles
+@import "variables";
 @import "base";
 @import "layout";
-
-// Layouts
 @import "resume";
 @import "pages";
