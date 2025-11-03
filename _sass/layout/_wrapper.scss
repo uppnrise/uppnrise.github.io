@@ -1,0 +1,49 @@
+// Modern Page Wrapper
+// ---------------------------------------
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $neutral-0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 $space-6;
+  width: 100%;
+  
+  @include respond-to($breakpoint-md) {
+    padding: 0 $space-8;
+  }
+}
+
+.page-content {
+  padding: $space-8 0;
+  
+  @include respond-to($breakpoint-md) {
+    padding: $space-12 0;
+  }
+}
+
+// Smooth transitions for page elements
+.wrapper,
+.page-content,
+.resume-item {
+  animation: fade-in-up $duration-slow $ease-out;
+}
+
+// Add stagger effect to resume items
+.resume-item {
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}

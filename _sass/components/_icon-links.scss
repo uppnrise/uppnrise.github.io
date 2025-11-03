@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   margin: $space-6 0;
+  border-top: none;
+  padding-top: 0;
   
   @include respond-to($breakpoint-md) {
     gap: $space-4;
@@ -15,7 +17,8 @@
 }
 
 .icon-link-item {
-  // No additional styles needed
+  display: inline-block;
+  margin-left: 0;
 }
 
 .icon-link {
@@ -26,20 +29,26 @@
   height: 44px;
   border-radius: 50%;
   background: $neutral-100;
-  color: $neutral-700;
   transition: $transition-base;
   
-  svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+  .icon {
+    width: 24px;
+    height: 24px;
+    
+    path {
+      fill: $neutral-700;
+      transition: $transition-colors;
+    }
   }
   
   &:hover {
     background: $primary-500;
-    color: $neutral-0;
     transform: translateY(-3px);
     box-shadow: $shadow-md;
+    
+    .icon path {
+      fill: $neutral-0;
+    }
   }
   
   @include focus-visible;
