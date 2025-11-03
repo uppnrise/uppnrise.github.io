@@ -1,0 +1,103 @@
+// Accessibility Enhancements
+// ---------------------------------------
+
+// Skip to main content link
+.skip-link {
+  @include visually-hidden;
+  
+  &:focus {
+    position: fixed;
+    top: $space-4;
+    left: $space-4;
+    z-index: $z-tooltip;
+    padding: $space-3 $space-6;
+    background: $primary-500;
+    color: $neutral-0;
+    font-weight: $font-bold;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    box-shadow: $shadow-xl;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+// Focus indicators for all interactive elements
+a,
+button,
+input,
+textarea,
+select,
+.nav-link,
+.icon-link,
+.button {
+  &:focus-visible {
+    outline: 3px solid $primary-500;
+    outline-offset: 3px;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .button--primary {
+    border: 2px solid $neutral-0;
+  }
+  
+  .card {
+    border: 2px solid $neutral-900;
+  }
+  
+  .resume-item {
+    border: 2px solid $primary-500;
+  }
+}
+
+// Ensure minimum touch target sizes (44x44px)
+@media (pointer: coarse) {
+  .nav-link,
+  .icon-link,
+  .button {
+    min-height: 44px;
+    min-width: 44px;
+    padding: $space-3 $space-4;
+  }
+}
+
+// Screen reader only text helpers
+.sr-only-focusable {
+  @include visually-hidden;
+  
+  &:focus,
+  &:active {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+// Improved contrast for text
+.text-low-contrast {
+  color: $neutral-600;
+  
+  @media (prefers-contrast: high) {
+    color: $neutral-900;
+  }
+}

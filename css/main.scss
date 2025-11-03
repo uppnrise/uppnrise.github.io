@@ -10,6 +10,7 @@
 @import "base/reset";
 @import "base/typography";
 @import "base/utilities";
+@import "base/accessibility";
 
 // Components (buttons, cards, navigation, etc.)
 @import "components/buttons";
@@ -22,6 +23,9 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/wrapper";
+
+// Pages
+@import "pages/resume";
 
 // Legacy imports for backward compatibility
 @import "normalize";

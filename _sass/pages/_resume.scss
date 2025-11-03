@@ -1,0 +1,173 @@
+// Resume Page Styles
+// ---------------------------------------
+
+// Content sections spacing
+.content-section {
+  margin-bottom: $space-12;
+  animation: fade-in-up $duration-slow $ease-out;
+  
+  @include respond-to($breakpoint-md) {
+    margin-bottom: $space-16;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  // Stagger animation
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.1}s;
+    }
+  }
+}
+
+// Section headers with modern accent
+.section-header {
+  margin-bottom: $space-8;
+  
+  h2 {
+    font-size: $text-3xl;
+    font-weight: $font-bold;
+    color: $neutral-900;
+    position: relative;
+    padding-bottom: $space-4;
+    margin-bottom: 0;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: $gradient-primary;
+      border-radius: $border-radius-full;
+    }
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-4xl;
+    }
+  }
+}
+
+// Experience/Education items
+.resume-item {
+  background: $neutral-0;
+  border-radius: $border-radius-lg;
+  padding: $space-6;
+  margin-bottom: $space-6;
+  box-shadow: $shadow-sm;
+  transition: $transition-transform, box-shadow $duration-normal $ease-out;
+  border-left: 4px solid $primary-500;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: $gradient-primary;
+    opacity: 0;
+    transition: $transition-base;
+  }
+  
+  &:hover {
+    transform: translateX(8px);
+    box-shadow: $shadow-md;
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @include respond-to($breakpoint-md) {
+    padding: $space-8;
+  }
+}
+
+.resume-item-title {
+  font-size: $text-xl;
+  font-weight: $font-bold;
+  color: $neutral-900;
+  margin-bottom: $space-2;
+  line-height: $leading-tight;
+  
+  @include respond-to($breakpoint-md) {
+    font-size: $text-2xl;
+  }
+}
+
+.resume-item-details {
+  font-size: $text-sm;
+  color: $neutral-600;
+  font-weight: $font-medium;
+  margin-bottom: $space-4;
+  
+  @include respond-to($breakpoint-md) {
+    font-size: $text-base;
+  }
+}
+
+.resume-item-copy {
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  color: $neutral-700;
+  margin-bottom: $space-3;
+  
+  @include respond-to($breakpoint-md) {
+    font-size: $text-base;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume-item-list {
+  list-style: disc;
+  padding-left: $space-6;
+  margin-top: $space-3;
+  
+  li {
+    margin-bottom: $space-2;
+    color: $neutral-700;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    
+    @include respond-to($breakpoint-md) {
+      font-size: $text-base;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Award title styling
+.award-title {
+  font-style: italic;
+  color: $neutral-600;
+  font-size: $text-sm;
+  margin-bottom: $space-3;
+}
+
+// Outside interests list
+.content-section {
+  .resume-item {
+    &:has(.resume-item-list:only-child) {
+      border-left: none;
+      
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}

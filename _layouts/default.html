@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.contact_address }}"/>
 
-      <header class="page-header">
+      <header class="page-header" role="banner">
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.avatar == 'true' %}
-        <img src="/images/profile.png" alt="my photo" class="avatar no-print" itemprop="image">
+        <img src="/images/profile.png" alt="Portrait photo of {{ site.name }}" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -55,11 +58,11 @@
       </header>
 
       <!-- Main content area - this is where page-specific content will be rendered -->
-      <main class="page-content">
+      <main id="main-content" class="page-content" role="main">
         {{ content }}
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" role="contentinfo">
         <p class="footer-line"> Contribute on <a href="https://github.com/uppnrise/uppnrise.github.io">GitHub</a>.</p>
       </footer>
 
