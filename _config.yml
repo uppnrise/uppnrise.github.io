@@ -23,11 +23,13 @@ contact_address:         ""
 header_contact_info:     ""
 display_header_contact_info:    "false"
 
-header_intro: "<p>10 years of experience building reliable backend systems—now focused on applied AI. Designing and
-implementing solutions that blend microservices with LLMs to automate workflows, developing
-custom MCP servers to extend AI capabilities, creating custom GitHub Copilot agents, and shipping
-smarter, scalable features end to end. Combining strong fundamentals in distributed systems with
-hands-on AI implementation to solve real business problems.</p>"
+header_intro: "<p>10 years of backend development with expertise in modern Java, Spring Framework, and reactive
+programming. Delivered scalable microservices for international companies across
+telecommunications, automotive, and enterprise software, emphasizing clean architecture and test-
+driven development. Strong foundation in CI/CD, containerization, distributed systems, and
+databases. Now focused on applied AI—building custom MCP servers, agentic tools, and LLM
+integrations for intelligent workflow automation. Active open-source contributor, developing tools that
+help developers build better software.</p>"
 
 looking_for_work:        "yes"
 
