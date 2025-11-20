@@ -1,6 +1,22 @@
 # Site settings
 title: "Burhanettin Nacar"
 description: "Burhanettin Nacar's personal website"
+url: "https://bnacar.dev"
+author:
+  name: "Burhanettin Nacar"
+  twitter: "uppnrise"
+social:
+  name: "Burhanettin Nacar"
+  links:
+    - "https://github.com/uppnrise"
+    - "https://x.com/uppnrise"
+    - "https://www.linkedin.com/in/burhanettin-nacar"
+    - "https://www.instagram.com/brhnt.nacar"
+    - "https://medium.com/@bnacar"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
