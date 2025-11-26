@@ -2,7 +2,8 @@
 layout: post
 title: "I Finally Understand Machine Learning Models (And You Can Too)"
 date: 2025-11-20
-categories: [machine-learning, ai, tutorial]
+tags: [Machine Learning, AI, Tutorial]
+excerpt: "Confused by machine learning models? This guide breaks down common algorithms like Clustering, Logistic Regression, Decision Trees, and Neural Networks using simple, real-world analogies."
 ---
 
 I remember the first time someone tried to explain machine learning to me. They started drawing hyperplanes on a whiteboard and talking about "gradient descent" within the first two minutes. I nodded along, pretending to understand, but honestly? I was completely lost.
