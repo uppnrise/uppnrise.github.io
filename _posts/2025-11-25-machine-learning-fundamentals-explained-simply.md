@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Machine Learning Fundamentals: What I Wish Someone Had Told Me Earlier"
-date: 2025-11-25 10:00:00 +0200
-tags: [machine-learning, ai, fundamentals, beginner-friendly, data-science]
+date: 2025-11-25
+tags: [Machine Learning, AI, Fundamentals, Beginner Friendly, Data Science]
 excerpt: "ML jargon can feel like a foreign language. Here's my attempt to explain supervised vs unsupervised learning, gradient descent, loss functions, regularization, and hyperparameter tuning using everyday examples that actually make sense."
 ---
 
