@@ -8,6 +8,14 @@
   description: A high-performance distributed token bucket rate limiter implementation in Java with comprehensive API documentation. Built for microservices architectures with Redis backend for distributed state management. Features dynamic configuration, real-time metrics, and sub-millisecond response times handling 50,000+ requests/second.
   technologies: [Java, Spring Boot, Redis, Docker, Kubernetes, Prometheus, Grafana, OpenAPI/Swagger, Maven, JUnit]
 
+- project: IronVeil
+  role: Lead Developer / Architect
+  duration: 2025
+  url: https://github.com/uppnrise/iron-veil
+  github_url: https://github.com/uppnrise/iron-veil
+  description: A high-performance, Rust-based database proxy designed for real-time PII anonymization. Sits between applications and databases, intercepting queries and masking sensitive data on the fly. Features multi-database support (PostgreSQL/MySQL), zero-copy parsing with Tokio, OpenTelemetry tracing, and a modern Next.js dashboard for monitoring and rule management. Handles production workloads with graceful shutdown, connection pooling, and health checks.
+  technologies: [Rust, Tokio, PostgreSQL, MySQL, Next.js, React, Tailwind CSS, Docker, OpenTelemetry, Prometheus, Axum]
+
 - project: Personal Portfolio Website
   role: Full-Stack Developer
   duration: 2025
