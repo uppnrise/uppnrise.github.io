@@ -25,50 +25,44 @@ sass:
   style: compressed
 
 # Settings
-avatar:                  "true"
-name:                    "Burhanettin Nacar"
-job_title:               "Senior Software Engineer"
+avatar: "true"
+name: "Burhanettin Nacar"
+job_title: "Senior Software Engineer"
 
 # used for the contact button in _layouts/resume.html
-contact_email:           "mtbnacar@gmail.com"
+contact_email: "mtbnacar@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-contact_telephone:       ""
-contact_address:         ""
+contact_telephone: ""
+contact_address: ""
 
-header_contact_info:     ""
-display_header_contact_info:    "false"
+header_contact_info: ""
+display_header_contact_info: "false"
 
-header_intro: "<p>10 years of backend development with expertise in modern Java, Spring Framework, and reactive
-programming. Delivered scalable microservices for international companies across
-telecommunications, automotive, and enterprise software, emphasizing clean architecture and test-
-driven development. Strong foundation in CI/CD, containerization, distributed systems, and
-databases. Now focused on applied AI—building custom MCP servers, agentic tools, and LLM
-integrations for intelligent workflow automation. Active open-source contributor, developing tools that
-help developers build better software.</p>"
+header_intro: "<p>Senior backend engineer with 10 years of experience building and scaling microservice-based systems using modern Java and the Spring Framework. Delivered production-grade solutions for global companies across telecommunications, automotive, and enterprise software. Strong foundation in clean architecture, TDD, CI/CD, containerization, and distributed systems. Currently focused on applied AI, developing MCP servers, agentic tools, and LLM-driven workflow automation. Active open-source contributor.</p>"
 
-looking_for_work:        "yes"
+looking_for_work: "yes"
 
-section_experience:      true
-section_education:       true
-# section_projects:        true
-# section_skills:          true
-# section_recognition:     true
-# section_links:           true
-# section_associations:    true
-section_interests:       true
+section_experience: true
+section_education: true
+# section_projects: true
+# section_skills: true
+# section_recognition: true
+# section_links: true
+# section_associations: true
+section_interests: true
 
 # Social links
 social_links:
-  github_url:            "https://github.com/uppnrise"
-  twitter_url:           "https://x.com/uppnrise"
-  # dribbble_url:          "https://dribbble.com/"
-  # facebook_url:          "insert Facebook URL here"
-  linkedin_url:          "https://www.linkedin.com/in/burhanettin-nacar"
-  instagram_url:         "https://www.instagram.com/brhnt.nacar"
-  website_url:           "https://bnacar.dev"
-  medium_url:            "https://medium.com/@bnacar"
-print_social_links:      true
+  github_url: "https://github.com/uppnrise"
+  twitter_url: "https://x.com/uppnrise"
+  # dribbble_url: "https://dribbble.com/"
+  # facebook_url: "insert Facebook URL here"
+  linkedin_url: "https://www.linkedin.com/in/burhanettin-nacar"
+  instagram_url: "https://www.instagram.com/brhnt.nacar"
+  website_url: "https://bnacar.dev"
+  medium_url: "https://medium.com/@bnacar"
+print_social_links: true
 
 # Design settings
-resume_theme:                   default
+resume_theme: default
