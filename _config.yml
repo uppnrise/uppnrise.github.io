@@ -17,6 +17,7 @@ social:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
@@ -28,6 +29,7 @@ sass:
 avatar: "true"
 name: "Burhanettin Nacar"
 job_title: "Senior Software Engineer"
+logo: "/images/profile.png"
 
 # used for the contact button in _layouts/resume.html
 contact_email: "mtbnacar@gmail.com"
