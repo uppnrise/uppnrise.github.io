@@ -4,7 +4,6 @@ title: "How to Extract Tables from PDFs Using Python (Without Losing Your Mind)"
 date: 2026-01-13
 tags: [Python, API, PDF, Tutorial]
 excerpt: "A practical guide to extracting tables from PDFs with PyMuPDF and pdfplumber, plus pitfalls and an API option for scale."
-image: "/images/profile.png"
 ---
 
 # How to Extract Tables from PDFs Using Python (Without Losing Your Mind)
