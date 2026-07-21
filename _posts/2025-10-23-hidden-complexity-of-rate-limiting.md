@@ -2,13 +2,9 @@
 layout: post
 title: "The Hidden Complexity of Distributed Rate Limiting: Lessons from Building 5 Algorithms"
 date: 2025-10-23 22:00:00 +0200
-tags: [distributed-systems, redis, rate-limiting, microservices, java, algorithms, architecture]
+tags: [Distributed Systems, Redis, Rate Limiting, Microservices, Java, Algorithms, Architecture]
 excerpt: "Building a production-grade distributed rate limiter taught me that algorithm choice matters more than I expected. Here's what I learned implementing Token Bucket, Sliding Window, Fixed Window, Leaky Bucket, and a Composite approach."
 ---
-
-# The Hidden Complexity of Distributed Rate Limiting: Lessons from Building 5 Algorithms
-
-*Published on October 23, 2025*
 
 I spent the last few months building a distributed rate limiter, and honestly, I underestimated how nuanced this problem is. What started as "just implement token bucket with Redis" turned into a deep dive into algorithm trade-offs, Redis optimization, and some interesting architectural decisions I'd love your feedback on.
 

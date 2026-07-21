@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
@@ -13,7 +13,7 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.avatar == 'true' %}
-        <img src="/images/profile.png" alt="my photo" class="avatar no-print" itemprop="image">
+        <img src="{{ '/images/profile.png' | relative_url }}" alt="Portrait of {{ site.name }}" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->

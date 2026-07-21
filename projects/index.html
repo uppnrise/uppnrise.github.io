@@ -1,6 +1,8 @@
 ---
 layout: default
 permalink: /projects/
+title: Projects
+description: "Selected software engineering projects spanning distributed systems, backend infrastructure, and developer tooling."
 ---
 
 <!-- begin Projects -->
@@ -38,10 +40,10 @@ permalink: /projects/
       
       {% if project.github_url or project.demo_url %}
       <div class="resume-item-copy">
-        {% if project.github_url %}
+        {% if project.github_url and project.github_url != project.url %}
           <a href="{{ project.github_url }}" target="_blank" rel="noopener">GitHub</a>
         {% endif %}
-        {% if project.github_url and project.demo_url %} &bull; {% endif %}
+        {% if project.github_url and project.github_url != project.url and project.demo_url %} &bull; {% endif %}
         {% if project.demo_url %}
           <a href="{{ project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
         {% endif %}
