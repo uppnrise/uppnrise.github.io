@@ -1,9 +1,1 @@
-# Skills
-- skill: O
-  description: I
-
-- skill: C
-  description: C
-
-- skill: D
-  description: D
+# Add skill records here before enabling section_skills in _config.yml.

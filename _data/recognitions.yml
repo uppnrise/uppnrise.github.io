@@ -1,10 +1,1 @@
-# Recognitions
-- award: O
-  organization: S
-  year: 2010, 2014
-  summary: A
-
-- award: M
-  organization: S
-  year: 2004
-  summary: V
+# Add recognition records here before enabling section_recognition in _config.yml.

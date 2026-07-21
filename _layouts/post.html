@@ -4,8 +4,12 @@ layout: default
 
 <!-- begin Blog Post -->
 <section class="content-section">
-  <div class="resume-item blog-post">
-    <h4 class="resume-item-details">{{ page.date | date: "%B %d, %Y" }}</h4>
+  <article class="resume-item blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+    <h1 class="resume-item-title" itemprop="headline">{{ page.title }}</h1>
+    <p class="resume-item-details">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
+      &bull; {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read
+    </p>
     {% if page.tags and page.tags.size > 0 %}
     <div class="resume-item-copy">
       <strong>Tags:</strong>
@@ -20,18 +24,18 @@ layout: default
     </div>
 
     {% if page.previous.url or page.next.url %}
-    <div class="resume-item-copy" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+    <nav class="post-navigation resume-item-copy" aria-label="Related articles">
       {% if page.previous.url %}
-        <a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+        <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
       {% endif %}
       {% if page.previous.url and page.next.url %}
-        <span style="margin: 0 1rem;">&bull;</span>
+        <span aria-hidden="true">&bull;</span>
       {% endif %}
       {% if page.next.url %}
-        <a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
       {% endif %}
-    </div>
+    </nav>
     {% endif %}
-  </div>
+  </article>
 </section>
 <!-- end Blog Post -->

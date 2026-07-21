@@ -5,7 +5,7 @@
   duration: 2025
   url: https://github.com/uppnrise/distributed-rate-limiter
   github_url: https://github.com/uppnrise/distributed-rate-limiter
-  description: A high-performance distributed token bucket rate limiter implementation in Java with comprehensive API documentation. Built for microservices architectures with Redis backend for distributed state management. Features dynamic configuration, real-time metrics, and sub-millisecond response times handling 50,000+ requests/second.
+  description: A distributed token bucket rate limiter implementation in Java with API documentation. Built for microservice architectures with Redis-backed state management, dynamic configuration, metrics, and reproducible performance tests documented in the repository.
   technologies: [Java, Spring Boot, Redis, Docker, Kubernetes, Prometheus, Grafana, OpenAPI/Swagger, Maven, JUnit]
 
 - project: IronVeil
@@ -19,7 +19,7 @@
 - project: Personal Portfolio Website
   role: Full-Stack Developer
   duration: 2025
-  url: https://uppnrise.github.io
+  url: https://bnacar.dev
   github_url: https://github.com/uppnrise/uppnrise.github.io
-  description: A responsive Jekyll-based portfolio website showcasing professional experience, projects, and blog posts. Features clean design, fast loading times, and SEO optimization. Deployed on GitHub Pages with custom domain and automated CI/CD pipeline.
+  description: A responsive Jekyll portfolio showcasing professional experience, projects, and technical articles. Includes print styling, structured metadata, an RSS feed, a sitemap, and automated build and regression checks on GitHub Pages.
   technologies: [Jekyll, HTML5, CSS3, SCSS, JavaScript, GitHub Pages, Git]

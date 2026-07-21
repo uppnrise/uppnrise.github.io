@@ -1,6 +1,6 @@
 # Site settings
 title: "Burhanettin Nacar"
-description: "Burhanettin Nacar's personal website"
+description: "Senior backend engineer writing about distributed systems, Java, applied AI, and production software engineering."
 url: "https://bnacar.dev"
 author:
   name: "Burhanettin Nacar"
@@ -47,11 +47,11 @@ looking_for_work: "yes"
 
 section_experience: true
 section_education: true
-# section_projects: true
-# section_skills: true
-# section_recognition: true
-# section_links: true
-# section_associations: true
+section_projects: false
+section_skills: false
+section_recognition: false
+section_links: false
+section_associations: false
 section_interests: true
 
 # Social links

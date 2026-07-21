@@ -37,11 +37,32 @@
       text-decoration: none;
     }
 
+    &:focus-visible {
+      outline: 3px solid #555;
+      outline-offset: 3px;
+    }
+
     &.active {
       background-color: #e8e8e8;
       font-weight: 700;
     }
   }
+}
+
+.icon-link:focus-visible,
+.content-section a:focus-visible,
+.contact-button:focus-visible {
+  outline: 3px solid #555;
+  outline-offset: 3px;
+}
+
+.post-navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
 // Technology tags styling that matches the main design

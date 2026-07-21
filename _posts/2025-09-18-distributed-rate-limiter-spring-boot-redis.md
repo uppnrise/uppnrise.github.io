@@ -6,10 +6,6 @@ tags: [Spring Boot, Redis, Rate Limiting, Microservices, Java, Distributed Syste
 excerpt: "Learn how to build and deploy a sophisticated distributed rate limiter using Spring Boot and Redis. Complete with benchmarks, monitoring, and production deployment strategies."
 ---
 
-# Building a Production-Ready Distributed Rate Limiter with Spring Boot and Redis
-
-*Published on September 18, 2025*
-
 Rate limiting is a critical component of any production API system. It protects your services from abuse, ensures fair resource distribution, and maintains system stability under heavy load. In this comprehensive guide, we'll explore a sophisticated distributed rate limiter implementation built with Spring Boot and Redis that you can deploy in production today.
 
 ## System Architecture

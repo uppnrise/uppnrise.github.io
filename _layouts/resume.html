@@ -34,16 +34,15 @@ layout: default
   <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
     <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
     <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-    <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-    <p class="resume-item-copy" itemprop="description">
+    {% if education.award %}<h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>{% endif %}
+    {% if education.awards %}
       <ul class="resume-item-list">
         {% for award in education.awards %}
         <li>{{ award.award }}</li>
         {% endfor %}
       </ul>
-
-
-    <p class="resume-item-copy">{{ education.summary }}</p>
+    {% endif %}
+    {% if education.summary %}<p class="resume-item-copy">{{ education.summary }}</p>{% endif %}
   </div>
   {% endfor %}
 </section>
@@ -51,7 +50,7 @@ layout: default
 {% endif %}
 
 
-{% if site.resume_section_projects %}
+{% if site.section_projects %}
 <!-- begin Projects -->
 <section class="content-section">
   <header class="section-header">
@@ -71,7 +70,7 @@ layout: default
 <!-- end Projects -->
 {% endif %}
 
-{% if site.resume_section_skills %}
+{% if site.section_skills %}
 <!-- begin Skills -->
 <section class="content-section">
 
@@ -89,7 +88,7 @@ layout: default
 <!-- end Skills -->
 {% endif %}
 
-{% if site.resume_section_recognition %}
+{% if site.section_recognition %}
 <!-- begin Recognition -->
 <section class="content-section">
 
@@ -109,7 +108,7 @@ layout: default
 <!-- end Recognition -->
 {% endif %}
 
-{% if site.resume_section_associations %}
+{% if site.section_associations %}
 <!-- begin Associations -->
 <section class="content-section">
 
@@ -149,7 +148,7 @@ layout: default
 <!-- end Interests -->
 {% endif %}
 
-{% if site.resume_section_links %}
+{% if site.section_links %}
 <!-- begin Links -->
 <section class="content-section">
 
@@ -160,7 +159,7 @@ layout: default
   <div class="resume-item">
     <ul class="resume-item-list">
       {% for link in site.data.links %}
-      <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+      <li><a href="{{ link.url }}" itemprop="url">{{ link.description }}</a></li>
       {% endfor %}
     </ul>
   </div>

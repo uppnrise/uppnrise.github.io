@@ -6,10 +6,6 @@ tags: [Machine Learning, AI, Fundamentals, Beginner Friendly, Data Science]
 excerpt: "ML jargon can feel like a foreign language. Here's my attempt to explain supervised vs unsupervised learning, gradient descent, loss functions, regularization, and hyperparameter tuning using everyday examples that actually make sense."
 ---
 
-# Machine Learning Fundamentals: What I Wish Someone Had Told Me Earlier
-
-*Published on November 25, 2025*
-
 A few months ago, I was having coffee with a friend who's a product manager. She asked me what "gradient descent" means, and I completely blanked. Not because I don't know it—I use it every day—but because I realized I'd never actually had to explain it to someone outside the ML bubble.
 
 That conversation stuck with me. So here's my attempt to explain the core ML concepts the way I wish someone had explained them to me when I started.
