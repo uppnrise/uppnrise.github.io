@@ -104,6 +104,12 @@ class SiteTest < Minitest::Test
     assert_match(/^\s+ruby-version:\s*["']?3\.4["']?\s*$/, workflow)
   end
 
+  def test_lockfile_supports_the_ci_platform
+    lockfile = ROOT.join("Gemfile.lock").read
+
+    assert_match(/^  x86_64-linux$/, lockfile)
+  end
+
   private
 
   def parse(path, baseurl: nil)
