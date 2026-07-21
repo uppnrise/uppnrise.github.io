@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: "3.4"
           bundler-cache: true
       - name: Build and test site
         run: bundle exec ruby test/site_test.rb
