@@ -98,6 +98,12 @@ class SiteTest < Minitest::Test
     end
   end
 
+  def test_ci_pins_the_ruby_version
+    workflow = ROOT.join(".github/workflows/site-checks.yml").read
+
+    assert_match(/^\s+ruby-version:\s*["']?3\.4["']?\s*$/, workflow)
+  end
+
   private
 
   def parse(path, baseurl: nil)
