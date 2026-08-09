@@ -1,4 +1,5 @@
 require "fileutils"
+require "bundler"
 require "minitest/autorun"
 require "nokogiri"
 require "open3"
@@ -108,6 +109,25 @@ class SiteTest < Minitest::Test
     lockfile = ROOT.join("Gemfile.lock").read
 
     assert_match(/^  x86_64-linux$/, lockfile)
+  end
+
+  def test_locked_dependencies_meet_snyk_safe_versions
+    locked_versions = Bundler::LockfileParser.new(ROOT.join("Gemfile.lock").read)
+                                             .specs
+                                             .to_h { |spec| [spec.name, spec.version] }
+    safe_versions = {
+      "activesupport" => "8.1.2.1",
+      "addressable" => "2.9.0",
+      "concurrent-ruby" => "1.3.7",
+      "faraday" => "2.14.3",
+      "json" => "2.19.9",
+      "nokogiri" => "1.19.4"
+    }
+
+    safe_versions.each do |name, minimum_version|
+      assert_operator locked_versions.fetch(name), :>=, Gem::Version.new(minimum_version),
+                      "#{name} must be at least #{minimum_version}"
+    end
   end
 
   private
