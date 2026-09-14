@@ -116,11 +116,8 @@ class SiteTest < Minitest::Test
                                              .specs
                                              .to_h { |spec| [spec.name, spec.version] }
     safe_versions = {
-      "activesupport" => "8.1.2.1",
       "addressable" => "2.9.0",
       "concurrent-ruby" => "1.3.7",
-      "faraday" => "2.14.3",
-      "json" => "2.19.9",
       "nokogiri" => "1.19.4"
     }
 
