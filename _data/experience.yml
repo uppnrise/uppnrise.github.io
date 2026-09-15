@@ -1,35 +1,42 @@
 # Jobs
+# Companies with more than one entry under `roles` are rendered as a single
+# grouped block (one company header, multiple positions/promotions listed
+# underneath), instead of repeating the company name for each role.
 - company: insightsoftware Deutschland(Former IDL)
-  position: Software Engineering Manager
-  duration: Sep, 2026 &mdash; Present
-  summary:
-
-- company: insightsoftware Deutschland(Former IDL)
-  position: Senior Software Engineer
-  duration: Oct, 2022 &mdash; Sep, 2026
-  summary:
+  roles:
+    - position: Software Engineering Manager
+      duration: Sep, 2026 &mdash; Present
+      summary:
+    - position: Senior Software Engineer
+      duration: Oct, 2022 &mdash; Sep, 2026
+      summary:
 
 - company: Evolve Squads
-  position: Senior Software Engineer
-  duration:  Sep, 2021 &mdash; Oct, 2022
-  summary:
+  roles:
+    - position: Senior Software Engineer
+      duration: Sep, 2021 &mdash; Oct, 2022
+      summary:
 
 - company: Vodafone Turkey
-  position: Backend Dev Lead
-  duration:  Aug, 2020 &mdash; Sep, 2021
-  summary:
+  roles:
+    - position: Backend Dev Lead
+      duration: Aug, 2020 &mdash; Sep, 2021
+      summary:
 
 - company: Turkish Airlines
-  position: Analyst Software Engineer
-  duration:  Aug, 2019 &mdash; Aug, 2020
-  summary:
+  roles:
+    - position: Analyst Software Engineer
+      duration: Aug, 2019 &mdash; Aug, 2020
+      summary:
 
 - company: Mercedes Benz Türk
-  position: Software Engineer
-  duration:  May, 2018 &mdash; Aug, 2019
-  summary:
+  roles:
+    - position: Software Engineer
+      duration: May, 2018 &mdash; Aug, 2019
+      summary:
 
 - company: Netas Telecommunication
-  position: Software Engineer
-  duration:  Aug, 2014 &mdash; May, 2018
-  summary:
+  roles:
+    - position: Software Engineer
+      duration: Aug, 2014 &mdash; May, 2018
+      summary:

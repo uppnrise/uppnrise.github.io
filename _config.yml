@@ -28,7 +28,7 @@ sass:
 # Settings
 avatar: "true"
 name: "Burhanettin Nacar"
-job_title: "Senior Software Engineer"
+job_title: "Software Engineering Manager"
 logo: "/images/profile.png"
 
 # used for the contact button in _layouts/resume.html
@@ -41,7 +41,7 @@ contact_address: ""
 header_contact_info: ""
 display_header_contact_info: "false"
 
-header_intro: "<p>Senior backend engineer with 10 years of experience building and scaling microservice-based systems using modern Java and the Spring Framework. Delivered production-grade solutions for global companies across telecommunications, automotive, and enterprise software. Strong foundation in clean architecture, TDD, CI/CD, containerization, and distributed systems. Currently focused on applied AI, developing MCP servers, agentic tools, and LLM-driven workflow automation. Active open-source contributor.</p>"
+header_intro: "<p>Software Engineering Manager with more than 10 years of backend development experience and a strong technical background in Java, Spring, microservices, distributed systems, CI/CD, and databases.</p><p>After many years of hands on software development, my focus has expanded toward engineering leadership, team development, delivery, and cross functional collaboration.</p><p>I enjoy helping teams create clarity, improve the way they work, and build high quality software in a sustainable way.</p><p>Alongside engineering management, I continue to explore applied AI, including MCP servers, agentic tools, and LLM integrations.</p>"
 
 looking_for_work: "yes"
 
