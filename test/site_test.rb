@@ -102,7 +102,7 @@ class SiteTest < Minitest::Test
   def test_ci_pins_the_ruby_version
     workflow = ROOT.join(".github/workflows/site-checks.yml").read
 
-    assert_match(/^\s+ruby-version:\s*["']?3\.4["']?\s*$/, workflow)
+    assert_match(/^\s+ruby-version:\s*["']?4\.0["']?\s*$/, workflow)
   end
 
   def test_lockfile_supports_the_ci_platform
