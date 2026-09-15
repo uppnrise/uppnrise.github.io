@@ -35,12 +35,12 @@ body{
 .group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
 
 ::-moz-selection {
-    background: rgba(51,51,51,.8);
+    background: rgba($accent, .85);
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: rgba(51,51,51,.8);
+    background: rgba($accent, .85);
     color: #fff;
     text-shadow: none;
 }

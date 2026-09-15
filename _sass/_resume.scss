@@ -83,7 +83,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid $border-color;
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -100,7 +100,7 @@
   .icon-link { display: inline-block;
 
     &:hover .icon path {
-      fill: #333;
+      fill: $accent;
       @include transition(all .2s ease);
     }
   }
@@ -112,7 +112,7 @@
 
 .contact-button {
   @include border-radius(3px);
-  background-color: #efefef;
+  background-color: $accent;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -120,16 +120,22 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: #fff;
   line-height: 55px;
   @include transition(all .2s ease);
 
   &:hover {
-    background-color: #333;
+    background-color: $accent-dark;
     color: #fff;
   }
 
-  &.not-looking { width: 400px; }
+  &.not-looking {
+    width: 400px;
+    background-color: #efefef;
+    color: #333;
+
+    &:hover { background-color: #333; color: #fff; }
+  }
 }
 
 // resume content styles
@@ -139,12 +145,50 @@
 
   .resume-item { margin-bottom: 2rem; }
 
+  .resume-item-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .25rem 1rem;
+    margin: 0 0 .35rem;
+  }
+
   .resume-item-title {
     @include sans_bold;
+    margin: 0;
+    font-size: 1.375rem;
+    letter-spacing: -.03rem;
+    line-height: 1.25;
+  }
+
+  // De-emphasized date/duration badge — sits apart from the title so the
+  // eye can separate "who/what" from "when" at a glance.
+  .resume-item-date {
+    @include sans;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: .8125rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: $muted-text;
+    background: #f1f2f4;
+    padding: .15rem .55rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  // Position / degree / role line — distinct from both the title above and
+  // the body copy below via accent color + medium weight. Uses the
+  // brighter $accent (not $accent-dark) so it reads as a clear accent pop
+  // next to the near-black title, rather than blending in as "just dark".
+  .resume-item-role {
+    @include sans;
+    font-weight: 600;
+    color: $accent;
+    font-size: 1.0625rem;
     margin: 0 0 .75rem;
-    font-size: 1.5rem;
-    letter-spacing: -.05rem;
-    line-height: 1;
+    line-height: 1.35;
   }
 
   .resume-item-details {
@@ -154,21 +198,130 @@
 
     &.award-title {
       font-size: 1rem;
+      font-style: italic;
+      color: $muted-text;
     }
   }
 
+  // Grouped roles — used when the same company has multiple positions
+  // (e.g. an internal promotion). Rendered as a small vertical timeline
+  // under a single company header instead of repeating the company name.
+  //
+  // The dot and the connecting line both live inside `.resume-role-marker`
+  // and are centered with `left: 50%` against the *same* box, so they stay
+  // perfectly aligned with each other regardless of exact sizing.
+  .resume-item-roles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume-role {
+    position: relative;
+    display: flex;
+    gap: .85rem;
+    margin: 0 0 1.5rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .resume-role-marker {
+    position: relative;
+    flex: 0 0 9px;
+    width: 9px;
+    margin-top: .5rem; // aligns the dot with the role title's cap-height
+
+    // the dot
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: $accent;
+      box-shadow: 0 0 0 2px $border-color;
+      transform: translateX(-50%);
+    }
+
+    // the connector reaching down to the next role's dot
+    &:after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      bottom: -1.85rem;
+      left: 50%;
+      width: 2px;
+      background: $border-color;
+      transform: translateX(-50%);
+    }
+  }
+
+  .resume-role:last-child .resume-role-marker:after {
+    display: none;
+  }
+
+  .resume-role-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .resume-role-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .25rem 1rem;
+    margin: 0 0 .35rem;
+
+    .resume-item-role { margin: 0; }
+  }
+
   .resume-item-title,
+  .resume-item-role,
   .resume-item-details,
   .resume-item-copy,
   .resume-item-list {
     a {
-      color: #333;
+      color: $accent;
       text-decoration: none;
       border-bottom: 1px solid;
 
       &:hover {
         border-bottom: none;
-        color: #9c9c9c;
+        color: $accent-dark;
+      }
+    }
+  }
+
+  // Plain bullet lists — Outside Interests, Additional Links. Swaps the
+  // default black browser disc for a small accent dot (echoing the marker
+  // used in the grouped-role timeline) so these sections pick up the same
+  // accent language as the rest of the resume instead of looking like an
+  // unstyled leftover.
+  .resume-item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 1.15rem;
+      margin: 0 0 .5rem;
+      line-height: 1.5;
+
+      &:last-child { margin-bottom: 0; }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: .55em;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $accent;
       }
     }
   }
@@ -177,9 +330,11 @@
 }
 
 // footer styles
-
+// A lighter 2px "closing" rule — intentionally quieter than the bold
+// accent-colored 4px rule that opens each content section above, so the
+// footer doesn't compete with them.
 .page-footer {
-  border-top: 4px solid #c7c7c7;
+  border-top: 2px solid $border-color;
   padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -187,11 +342,11 @@
   .footer-line {
     margin: 0;
     font-size: .875rem;
-    color: #999;
+    color: $muted-text;
 
     > a {
       font-weight: 700;
-      color: #333;
+      color: $accent;
     }
   }
 }
@@ -217,9 +372,35 @@
   .content-section {
     margin: 0 0 1rem;
     .resume-item { margin-bottom: 1rem; }
+
+    .resume-item-header {
+      display: block;
+      margin: 0;
+    }
+
     .resume-item-title {
       font-size: 16px;
       line-height: .7em;
+    }
+
+    .resume-item-date {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #555;
+      background: none;
+      padding: 0;
+    }
+
+    .resume-item-role {
+      font-size: 12px;
+      font-weight: 700;
+      font-style: italic;
+      color: #333;
+      margin: .1em 0 .5em;
+      line-height: .9em;
     }
 
     .resume-item-details {
@@ -231,6 +412,32 @@
       &.award-title {
         font-size: 11px;
       }
+    }
+
+    .resume-item-roles {
+      padding: 0;
+    }
+
+    .resume-role {
+      display: block;
+      margin: 0 0 .5rem;
+      padding-left: .75rem;
+      border-left: 1px solid #999;
+    }
+
+    .resume-role-marker {
+      display: none;
+    }
+
+    .resume-role-header {
+      display: block;
+      margin: 0;
+    }
+
+    // Keep the interests/links bullets economical black ink on paper,
+    // matching the rest of the grayscale print palette.
+    .resume-item-list li:before {
+      background: #333;
     }
   }
 }
